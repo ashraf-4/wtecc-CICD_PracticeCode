@@ -1,0 +1,13 @@
+name: Ashraf 
+
+on:
+   push:
+      branches : ["branch1"]
+   pull_request:
+      branches : ["branch2"]
+jobs:
+  build : 
+    runs-on: ubuntu-latest
+    container: python :3.9-slim 
+
+  
